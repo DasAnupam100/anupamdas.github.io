@@ -1,0 +1,225 @@
+{
+  "profile": {
+    "name": "Anupam Das",
+    "headerTitle": "DVM, MS, Virologist",
+    "title": "DVM, MS",
+    "position": "Research Assistant in Molecular Virology & Viral Genomics",
+    "institution": "Department of Microbiology and Hygiene, Bangladesh Agricultural University (BAU)",
+    "tagline": "Prospective PhD Student (Fall 2026 / Spring 2027)",
+    "cvUrl": "Anupam_Das_CV.pdf",
+    "avatarUrl": "",
+    "bio": "Veterinary Virologist with comprehensive training in molecular diagnostic virology, viral isolation, and computational genomics. My research spans field outbreak surveillance, full-genome NGS assembly, phylogenetics, selection pressure, and recombination dynamics in high-impact avian and zoonotic viruses. Committed to pursuing advanced PhD research in virus evolution, host-pathogen interactions, and emerging infectious disease prevention.",
+    "socialLinks": [
+      { "id": 1, "name": "Email", "url": "mailto:anupam.das.vet@gmail.com" },
+      { "id": 2, "name": "Google Scholar", "url": "https://scholar.google.com" },
+      { "id": 3, "name": "ORCID", "url": "https://orcid.org" },
+      { "id": 4, "name": "LinkedIn", "url": "https://linkedin.com" },
+      { "id": 5, "name": "Scopus", "url": "https://scopus.com" },
+      { "id": 6, "name": "Web of Science", "url": "https://webofscience.com" }
+    ]
+  },
+  "pubCategories": [
+    { "id": "all", "label": "All Manuscripts" },
+    { "id": "under_review", "label": "Under Review" },
+    { "id": "published", "label": "Published" },
+    { "id": "avian", "label": "Avian Viruses" }
+  ],
+  "galleryAlbums": ["All Photos", "Lab Work", "Fellowships", "Conferences"],
+  "education": [
+    {
+      "id": 1,
+      "degree": "Master of Science (M.S.) in Microbiology",
+      "institution": "Bangladesh Agricultural University (BAU), Mymensingh",
+      "period": "2025 – 2026",
+      "cgpa": "3.83 / 4.00 (Up to 2nd Sem)",
+      "description": "Thesis: Molecular detection and complete genomic characterization of fowl adenovirus (FAdV) strains circulating in poultry in Bangladesh. Advisor: Prof. Dr. Md. Golzar Hossain."
+    },
+    {
+      "id": 2,
+      "degree": "Doctor of Veterinary Medicine (DVM)",
+      "institution": "Bangladesh Agricultural University (BAU), Mymensingh",
+      "period": "2018 – 2025",
+      "cgpa": "3.312 / 4.00",
+      "description": "Registered Veterinarian (BVC Reg No: 9682). 5-year professional veterinary program covering infectious disease pathology, epidemiology, clinical diagnostics, and diagnostic internship."
+    }
+  ],
+  "skills": {
+    "category1": {
+      "title": "In Vitro & Wet-Lab Virology",
+      "subtitle": "Diagnostic Benchwork & Viral Culture",
+      "bullets": [
+        "Viral Isolation & Culture: Embryonated Chicken Egg (ECE) inoculation (amniotic, allantoic, CAM routes), primary cell culture maintenance, cytopathic effect (CPE) monitoring.",
+        "Serology & Titration: Hemagglutination (HA) and HA Inhibition (HI) assays, viral infectivity titration (EID50, ELD50 calculations), indirect and sandwich ELISA assays.",
+        "Molecular Assays: Viral DNA/RNA extraction (spin-column and magnetic bead), PCR, RT-qPCR, gradient PCR, agarose gel electrophoresis, gel documentation.",
+        "Biosafety & Sample Processing: BSL-2 laboratory procedures, field sample processing from poultry/livestock tissue, aseptic technique, cold-chain maintenance."
+      ]
+    },
+    "category2": {
+      "title": "Computational & Viral Bioinformatics",
+      "subtitle": "NGS Analysis & Evolutionary Modeling",
+      "bullets": [
+        "NGS Genome Assembly & Annotation: Full-length viral genome assembly (SPAdes, MEGAHIT), quality filtering (FastQC, Trimmomatic), gene prediction, genome annotation (Prokka, NCBI).",
+        "Phylogenetics & Evolutionary Dynamics: Maximum Likelihood and Bayesian phylogenetic tree construction (IQ-TREE, MEGA, BEAST), tree visualization (FigTree, iTOL).",
+        "Recombination & Selection Pressure: Recombination detection suite (RDP4/RDP5), site-specific selection pressure analysis (HYPHY, dN/dS calculations, MEME, FEL, FUBAR).",
+        "Vaccinology & Computational Tools: Subtractive genomics, immunoinformatics vaccine design, Linux shell scripting, Python & R data visualization."
+      ]
+    }
+  },
+  "publications": [
+    {
+      "id": 1,
+      "title": "Evolutionary Genomics of Fowl Adenovirus-E Serotype 8b Isolated from Commercial Broiler Outbreaks in Bangladesh",
+      "authors": "Anupam Das, M. S. Islam, S. Akter, M. G. Hossain",
+      "journal": "Virology (Manuscript Under Review)",
+      "year": "2026",
+      "category": "under_review",
+      "tags": "avian, under_review",
+      "isFirstAuthor": true,
+      "doi": ""
+    },
+    {
+      "id": 2,
+      "title": "Reassortant Highly Pathogenicity H5N1 Genotype G1.1 Isolated from Poultry Outbreaks in Bangladesh: Molecular Characterization and Phylodynamics",
+      "authors": "Anupam Das, R. Parvin, M. G. Hossain",
+      "journal": "Poultry Science (Manuscript Under Review)",
+      "year": "2026",
+      "category": "under_review",
+      "tags": "avian, under_review",
+      "isFirstAuthor": true,
+      "doi": ""
+    },
+    {
+      "id": 3,
+      "title": "Genomic Diversity and Evolutionary Dynamics of Circulating Human Papillomavirus Genotypes: A Comparative Structural Analysis",
+      "authors": "Anupam Das, T. A. Khan, S. Akter",
+      "journal": "Journal of Infection and Public Health (Manuscript Under Review)",
+      "year": "2026",
+      "category": "under_review",
+      "tags": "under_review",
+      "isFirstAuthor": true,
+      "doi": ""
+    },
+    {
+      "id": 4,
+      "title": "Complete Genome Sequencing of Occult Hepatitis B Virus in Hemodialysis Patients in Bangladesh",
+      "authors": "M. S. Rahman, Anupam Das, S. Akter, M. G. Hossain",
+      "journal": "International Journal of Microbiology",
+      "year": "2026",
+      "category": "published",
+      "tags": "published",
+      "isFirstAuthor": false,
+      "doi": "10.1155/2026/ijm.991204"
+    },
+    {
+      "id": 5,
+      "title": "Complete genome sequencing of the fowlpox virus vaccine strain isolated in Bangladesh",
+      "authors": "Anupam Das, S. Akter, M. G. Hossain",
+      "journal": "Microbiology Resource Announcements",
+      "year": "2026",
+      "category": "published",
+      "tags": "avian, published",
+      "isFirstAuthor": true,
+      "doi": "10.1128/mra.00210-26"
+    },
+    {
+      "id": 6,
+      "title": "First complete genome of a fowlpox virus isolated in Bangladesh: Structural and evolutionary insights",
+      "authors": "Anupam Das, S. Akter, M. G. Hossain",
+      "journal": "Microbiology Spectrum",
+      "year": "2026",
+      "category": "published",
+      "tags": "avian, published",
+      "isFirstAuthor": true,
+      "doi": "10.1128/spectrum.01045-26"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Research Assistant",
+      "institution": "Viral Genomics & Infection Dynamics Lab, Dept. of Microbiology and Hygiene, BAU",
+      "period": "2024 – Present",
+      "badge": "Current Appointment",
+      "bullets": [
+        "Leading molecular diagnostic surveillance and NGS characterization of Fowl Adenovirus (FAdV) and Avian Influenza Virus (AIV) outbreaks.",
+        "Executing full genome assembly pipelines (SPAdes, MEGAHIT), selection pressure estimation (HyPhy), and recombination mapping (RDP5).",
+        "Co-supervising undergraduate veterinary students in molecular diagnostic assays (RT-qPCR, gel electrophoresis)."
+      ]
+    },
+    {
+      "id": 2,
+      "role": "SAKURA Science Exchange Program Fellow",
+      "institution": "Japan Science and Technology Agency (JST), Japan (SSC ID: 24101499)",
+      "period": "March 2026",
+      "badge": "International Fellowship",
+      "bullets": [
+        "Awarded prestigious international research fellowship under JST (Japan).",
+        "Participated in advanced biotechnology training, high-throughput sequencing technologies, and cross-border research collaborations in viral disease containment."
+      ]
+    },
+    {
+      "id": 3,
+      "role": "Research Assistant",
+      "institution": "Livestock Research Institute (LRI), Department of Livestock Services (DLS)",
+      "period": "2025 – Present",
+      "badge": "Institutional Role",
+      "bullets": [
+        "Assisting in livestock viral vaccine quality control, seed virus maintenance, and field diagnostic ELISA testing for viral diseases."
+      ]
+    },
+    {
+      "id": 4,
+      "role": "Research Intern",
+      "institution": "BLRI & Central Disease Investigation Laboratory (CDIL), Dhaka",
+      "period": "Oct – Nov 2024",
+      "badge": "Internship",
+      "bullets": [
+        "Rotated through outbreak response teams, epidemiological data gathering, and diagnostic necropsy for livestock viral outbreaks."
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "album": "Lab Work",
+      "title": "BAU Molecular Virology Lab Work",
+      "category": "Wet Lab Research",
+      "imgUrl": "https://placehold.co/600x400/102a43/ffffff?text=BAU+Molecular+Virology+Lab",
+      "caption": "Performing molecular diagnostic RT-qPCR assays and nucleic acid extractions at BAU."
+    },
+    {
+      "id": 2,
+      "album": "Fellowships",
+      "title": "SAKURA Science Program (Japan)",
+      "category": "International Fellowship",
+      "imgUrl": "https://placehold.co/600x400/0d9488/ffffff?text=Japan+SAKURA+Exchange",
+      "caption": "Participating in advanced viral genomic workshops under JST in Japan."
+    },
+    {
+      "id": 3,
+      "album": "Conferences",
+      "title": "BSVER ASCon XXXII Presentation",
+      "category": "Conference Presentation",
+      "imgUrl": "https://placehold.co/600x400/b7791f/ffffff?text=BSVER+ASCon+XXXII+Presentation",
+      "caption": "Delivering research talk on Fowl Adenovirus strain surveillance in Bangladesh."
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "name": "Dr. Md. Golzar Hossain",
+      "title": "Professor & MS Thesis Advisor",
+      "dept": "Department of Microbiology and Hygiene\nFaculty of Veterinary Science\nBangladesh Agricultural University (BAU), Mymensingh-2202",
+      "email": "mhossain@bau.edu.bd",
+      "badge": "Primary Advisor"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sharmin Akter",
+      "title": "Professor",
+      "dept": "Department of Microbiology and Hygiene\nFaculty of Veterinary Science\nBangladesh Agricultural University (BAU), Mymensingh-2202",
+      "email": "sharmin.akter@bau.edu.bd",
+      "badge": "Academic Ref"
+    }
+  ]
+}
