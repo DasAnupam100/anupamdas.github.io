@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anupam Das, DVM, MS | Academic Portfolio</title>
+    <title id="site-page-title">Anupam Das, DVM, MS | Academic Portfolio</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,7 +37,7 @@
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Bitter:wght@400;700&family=Crimson+Text:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Manrope:wght@400;500;600;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;600;700&family=Nunito:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -59,6 +59,15 @@
             background-color: #2563eb;
             color: #ffffff;
         }
+        .research-paragraph { text-align: justify; text-justify: inter-word; }
+        .news-viewport { max-height: 180px; overflow: hidden; position: relative; }
+        .news-track { display: flex; flex-direction: column; gap: .625rem; }
+        .news-track.news-auto-scroll { animation: newsScroll 32s linear infinite; }
+        .news-viewport:hover .news-track.news-auto-scroll { animation-play-state: paused; }
+        @keyframes newsScroll { from { transform: translateY(0); } to { transform: translateY(calc(-50% - .3125rem)); } }
+        .avatar-circle { border-radius: 9999px !important; }
+        .news-date { width: 5.5rem; flex: 0 0 5.5rem; }
+        main > section[hidden] { display: none !important; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 font-sans transition-colors duration-300 antialiased">
@@ -87,8 +96,8 @@
     <header class="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800 transition-colors shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 rounded-xl bg-blue-700 text-white flex items-center justify-center font-bold font-serif text-xl group-hover:bg-blue-800 transition-colors shadow-md">
-                    AD
+                <div id="nav-brand-avatar" class="w-10 h-10 rounded-xl bg-blue-700 text-white flex items-center justify-center font-bold font-serif text-xl group-hover:bg-blue-800 transition-colors shadow-md overflow-hidden">
+                    <img id="nav-brand-avatar-img" src="" alt="Profile image" class="w-full h-full object-cover hidden">
                 </div>
                 <div class="flex flex-col">
                     <span id="nav-brand-name" class="font-bold text-slate-900 dark:text-white leading-tight text-base">Anupam Das</span>
@@ -98,13 +107,14 @@
 
             <!-- Desktop Nav Links -->
             <nav class="hidden lg:flex items-center space-x-6 text-xs font-semibold uppercase tracking-wider">
-                <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
-                <a href="#education" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Education</a>
-                <a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
-                <a href="#publications" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Publications</a>
-                <a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
-                <a href="#gallery" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Gallery</a>
-                <a href="#references" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">References</a>
+                <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navAbout">About</span></a>
+                <a href="#education" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navEducation">Education</span></a>
+                <a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navSkills">Skills</span></a>
+                <a href="#publications" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navPublications">Publications</span></a>
+                <a href="#awards" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navAwards">Awards</span></a>
+                <a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navExperience">Experience</span></a>
+                <a href="#gallery" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navGallery">Gallery</span></a>
+                <a href="#references" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"><span class="site-text" data-key="navReferences">References</span></a>
             </nav>
 
             <!-- Actions -->
@@ -116,7 +126,7 @@
 
                 <a id="cv-download-btn" href="Anupam_Das_CV.pdf" download="Anupam_Das_CV.pdf" class="hidden sm:inline-flex items-center space-x-2 px-3.5 py-2 text-xs font-semibold rounded-xl bg-blue-700 hover:bg-blue-800 text-white transition-all shadow hover:shadow-md">
                     <i class="fas fa-file-pdf"></i>
-                    <span>CV (PDF)</span>
+                    <span class="site-text" data-key="cv">CV (PDF)</span>
                 </a>
 
                 <!-- Mobile Menu Button -->
@@ -128,16 +138,17 @@
 
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden lg:hidden border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 pt-2 pb-4 space-y-3">
-            <a href="#about" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">About</a>
-            <a href="#education" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">Education</a>
-            <a href="#skills" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">Capabilities</a>
-            <a href="#publications" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">Publications</a>
-            <a href="#experience" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">Experience</a>
-            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">Gallery</a>
-            <a href="#references" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300">References</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navAbout">About</span></a>
+            <a href="#education" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navEducation">Education</span></a>
+            <a href="#skills" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navSkills">Capabilities</span></a>
+            <a href="#publications" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navPublications">Publications</span></a>
+            <a href="#awards" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navAwards">Awards</span></a>
+            <a href="#experience" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navExperience">Experience</span></a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navGallery">Gallery</span></a>
+            <a href="#references" onclick="toggleMobileMenu()" class="block text-sm font-medium py-1 text-slate-700 dark:text-slate-300"><span class="site-text" data-key="navReferences">References</span></a>
             <a id="mobile-cv-btn" href="Anupam_Das_CV.pdf" download="Anupam_Das_CV.pdf" class="inline-flex w-full justify-center items-center space-x-2 px-4 py-2 text-xs font-semibold rounded-lg bg-blue-700 text-white">
                 <i class="fas fa-file-pdf"></i>
-                <span>Download CV (PDF)</span>
+                <span class="site-text" data-key="downloadCv">Download CV (PDF)</span>
             </a>
         </div>
     </header>
@@ -182,29 +193,66 @@
                             </div>
 
                             <!-- Bio Summary -->
-                            <p id="pub-hero-bio" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl">
+                            <p id="pub-hero-bio" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl research-paragraph">
                                 Veterinary Virologist with comprehensive training in molecular diagnostic virology, viral isolation, and computational genomics. My research spans field outbreak surveillance, full-genome NGS assembly, phylogenetics, selection pressure, and recombination dynamics in high-impact avian and zoonotic viruses.
                             </p>
 
                             <!-- Focus Tags -->
-                            <div class="flex flex-wrap justify-center lg:justify-start gap-2 pt-1">
-                                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200 dark:border-slate-700">
-                                    <i class="fas fa-virus mr-1.5 text-blue-500"></i> Molecular Virology
-                                </span>
-                                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200 dark:border-slate-700">
-                                    <i class="fas fa-dna mr-1.5 text-teal-500"></i> NGS Viral Genomics
-                                </span>
-                                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200 dark:border-slate-700">
-                                    <i class="fas fa-diagram-project mr-1.5 text-purple-500"></i> Viral Evolution & Recombination
-                                </span>
-                                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200 dark:border-slate-700">
-                                    <i class="fas fa-shield-virus mr-1.5 text-amber-500"></i> Host-Pathogen Interactions
-                                </span>
-                            </div>
+                            <div id="pub-focus-tags" class="flex flex-wrap justify-center lg:justify-start gap-2 pt-1"></div>
 
                             <!-- Dynamic Action Links Buttons -->
                             <div id="pub-hero-links" class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-3">
                                 <!-- Dynamic Render -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METRICS STRIP -->
+        <section id="metrics" class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div id="metrics-strip" class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                    <!-- Rendered dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 01: RESEARCH FOCUS (#research-focus) -->
+        <section id="research-focus" class="py-16 bg-slate-100/70 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+                    <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">01</span>
+                    <div class="p-3 rounded-2xl bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">
+                        <i class="fas fa-compass text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 site-text" data-key="researchDirection">Direction & Approach</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="researchFocus">Research Focus</h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass-card rounded-2xl p-6 border-t-4 border-t-purple-600 shadow-md">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-purple-700 dark:text-purple-400 mb-2"><i class="fas fa-crosshairs mr-1.5"></i><span class="site-text" data-key="researchInterests">Research Interests</span></h3>
+                        <p id="research-interests-text" class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                    <div class="glass-card rounded-2xl p-6 border-t-4 border-t-blue-600 shadow-md">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400 mb-2"><i class="fas fa-lightbulb mr-1.5"></i><span class="site-text" data-key="researchPhilosophy">How I Approach a Problem</span></h3>
+                        <p id="research-philosophy-text" class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <div class="glass-card rounded-2xl p-5 border-t-4 border-t-emerald-600 shadow-md">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400 mb-2 flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse mr-2"></span><span class="site-text" data-key="currentWorking">Currently Working On</span></h3>
+                            <p id="current-research-text" class="text-xs text-slate-700 dark:text-slate-300 leading-relaxed"></p>
+                        </div>
+                        <div class="glass-card rounded-2xl p-5 border-t-4 border-t-amber-600 shadow-md flex-1">
+                            <h3 class="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-3"><i class="fas fa-clock-rotate-left mr-1.5"></i><span class="site-text" data-key="recentUpdates">Recent Updates</span></h3>
+                            <div id="news-feed-viewport" class="news-viewport">
+                                <div id="news-feed-list" class="news-track text-xs text-slate-700 dark:text-slate-300">
+                                    <!-- Rendered dynamically -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,12 +265,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header -->
                 <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+                    <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">02</span>
                     <div class="p-3 rounded-2xl bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300">
                         <i class="fas fa-user-graduate text-2xl"></i>
                     </div>
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Academic Background</span>
-                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">Academic Credentials</h2>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 site-text" data-key="academicBackground">Academic Background</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="academicCredentials">Academic Credentials</h2>
                     </div>
                 </div>
 
@@ -237,12 +286,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header -->
                 <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+                    <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">03</span>
                     <div class="p-3 rounded-2xl bg-teal-100 dark:bg-teal-900/50 text-teal-700 dark:text-teal-300">
                         <i class="fas fa-microscope text-2xl"></i>
                     </div>
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400">Core Expertise</span>
-                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">Technical Capabilities</h2>
+                        <span class="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 site-text" data-key="coreExpertise">Core Expertise</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="technicalCapabilities">Technical Capabilities</h2>
                     </div>
                 </div>
 
@@ -258,19 +308,20 @@
                 <!-- Section Header -->
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
                     <div class="flex items-center space-x-3">
+                        <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">04</span>
                         <div class="p-3 rounded-2xl bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300">
                             <i class="fas fa-book-bookmark text-2xl"></i>
                         </div>
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">Scholarly Output</span>
-                            <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">Publications & Manuscripts</h2>
+                            <span class="text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400 site-text" data-key="scholarlyOutput">Scholarly Output</span>
+                            <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="publications">Publications & Manuscripts</h2>
                         </div>
                     </div>
 
                     <!-- Search Bar -->
                     <div class="relative w-full md:w-80">
                         <i class="fas fa-search absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-                        <input type="text" id="pub-search" oninput="renderPublicPublications()" placeholder="Search title, journal, or pathogen..." class="w-full pl-9 pr-4 py-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all">
+                        <input type="text" id="pub-search" oninput="renderPublicPublications()" placeholder="Search title, journal, or pathogen..." data-text-key="searchPublications" class="w-full pl-9 pr-4 py-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 focus:ring-2 focus:ring-blue-500 outline-none transition-all">
                     </div>
                 </div>
 
@@ -286,17 +337,38 @@
             </div>
         </section>
 
-        <!-- SECTION 5: RESEARCH EXPERIENCE (#experience) [TIMELINE - DISTINCT BG] -->
+        <!-- SECTION 05: GRANTS, AWARDS & FELLOWSHIPS (#awards) -->
+        <section id="awards" class="py-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+                    <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">05</span>
+                    <div class="p-3 rounded-2xl bg-yellow-100 dark:bg-yellow-900/50 text-yellow-700 dark:text-yellow-400">
+                        <i class="fas fa-medal text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-yellow-600 dark:text-yellow-400 site-text" data-key="recognition">Recognition</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="awards">Grants, Awards & Fellowships</h2>
+                    </div>
+                </div>
+
+                <div id="pub-awards-container" class="grid md:grid-cols-2 gap-6">
+                    <!-- Rendered dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 06: RESEARCH EXPERIENCE (#experience) [TIMELINE - DISTINCT BG] -->
         <section id="experience" class="py-16 bg-slate-100/70 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header -->
                 <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+                    <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">06</span>
                     <div class="p-3 rounded-2xl bg-amber-100 dark:bg-amber-900/50 text-amber-700 dark:text-amber-300">
                         <i class="fas fa-briefcase text-2xl"></i>
                     </div>
                     <div>
                         <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Career Trajectory</span>
-                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">Research Experience & Appointments</h2>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="experience">Research Experience & Appointments</h2>
                     </div>
                 </div>
 
@@ -313,12 +385,13 @@
                 <!-- Section Header -->
                 <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
                     <div class="flex items-center space-x-3">
+                        <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">07</span>
                         <div class="p-3 rounded-2xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300">
                             <i class="fas fa-images text-2xl"></i>
                         </div>
                         <div>
-                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Academic Gallery</span>
-                            <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">Fieldwork & Media Gallery</h2>
+                            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 site-text" data-key="academicGallery">Academic Gallery</span>
+                            <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="gallery">Fieldwork & Media Gallery</h2>
                         </div>
                     </div>
 
@@ -339,12 +412,13 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <!-- Section Header -->
                 <div class="flex items-center space-x-3 mb-8 pb-4 border-b border-slate-200 dark:border-slate-800">
+                    <span class="font-serif text-3xl font-bold text-slate-300 dark:text-slate-700">08</span>
                     <div class="p-3 rounded-2xl bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300">
                         <i class="fas fa-quote-left text-2xl"></i>
                     </div>
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">Recommenders</span>
-                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">Academic References</h2>
+                        <span class="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 site-text" data-key="recommenders">Recommenders</span>
+                        <h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white site-text" data-key="references">Academic References</h2>
                     </div>
                 </div>
 
@@ -363,7 +437,7 @@
                 <p id="footer-name" class="font-bold text-slate-800 dark:text-slate-200 text-sm">Anupam Das, DVM, MS</p>
                 <p id="footer-title" class="mt-0.5">Prospective PhD Student | Molecular Virology & Viral Genomics</p>
             </div>
-            <p>&copy; 2026 Anupam Das. All rights reserved.</p>
+            <p>&copy; 2026 Anupam Das. <span class="site-text" data-key="rights">All rights reserved.</span></p>
         </div>
     </footer>
 
@@ -410,11 +484,20 @@
             return 'fas fa-link text-blue-500';
         }
 
+        const DEFAULT_SITE_TEXT = {"title": "Anupam Das, DVM, MS | Academic Portfolio", "navTitle": "DVM, MS, Virologist", "navAbout": "About", "navEducation": "Education", "navSkills": "Skills", "navPublications": "Publications", "navAwards": "Awards", "navExperience": "Experience", "navGallery": "Gallery", "navReferences": "References", "cv": "CV (PDF)", "downloadCv": "Download CV (PDF)", "heroBadge": "DVM, MS", "researchDirection": "Direction & Approach", "researchFocus": "Research Focus", "researchInterests": "Research Interests", "researchPhilosophy": "How I Approach a Problem", "currentWorking": "Currently Working On", "recentUpdates": "Recent Updates", "academicBackground": "Academic Background", "academicCredentials": "Academic Credentials", "coreExpertise": "Core Expertise", "technicalCapabilities": "Technical Capabilities", "scholarlyOutput": "Scholarly Output", "publications": "Publications & Manuscripts", "searchPublications": "Search title, journal, or pathogen...", "recognition": "Recognition", "awards": "Grants, Awards & Fellowships", "careerTrajectory": "Career Trajectory", "experience": "Research Experience & Appointments", "academicGallery": "Academic Gallery", "gallery": "Fieldwork & Media Gallery", "recommenders": "Recommenders", "references": "Academic References", "expandView": "Expand View", "noMatching": "No matching manuscripts found.", "doi": "DOI", "firstAuthor": "First Author", "published": "Published", "underReview": "Under Review", "manuscripts": "Manuscripts", "firstAuthorMetric": "First-Author", "yearsResearch": "Yrs Research Exp.", "reference": "Reference", "photo": "Photo", "general": "General", "allPhotos": "All Photos", "rights": "All rights reserved.", "viewAll": "View all manuscripts", "showFewer": "Show fewer manuscripts", "footerTitle": "Prospective PhD Student | Molecular Virology & Viral Genomics"};
+        function siteText(k,f=''){return (appData.siteText&&appData.siteText[k])||DEFAULT_SITE_TEXT[k]||f;}
+        function applySiteText(){document.title=siteText('title');document.querySelectorAll('.site-text[data-key]').forEach(e=>e.textContent=siteText(e.dataset.key,e.textContent));const s=document.getElementById('pub-search');if(s)s.placeholder=siteText('searchPublications',s.placeholder);}
+        function renderFocusTags(){const c=document.getElementById('pub-focus-tags');if(!c)return;c.innerHTML=(appData.profile.focusTags||[]).map(t=>`<span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-medium border border-slate-200 dark:border-slate-700"><i class="${t.icon||'fas fa-tag'} mr-1.5 text-${t.color||'blue'}-500"></i>${t.text||''}</span>`).join('');}
+        function applySubsectionVisibility(){const v=appData.sectionVisibility||{};const map={researchInterests:'research-interests-text',researchPhilosophy:'research-philosophy-text',currentResearch:'current-research-text',recentUpdates:'news-feed-viewport',publicationFilters:'pub-filter-buttons-container',publicationList:'publications-list',awardsList:'pub-awards-container',experienceList:'pub-exp-container',galleryAlbums:'gallery-album-filters',galleryList:'pub-gallery-container',referencesList:'pub-ref-container'};Object.entries(map).forEach(([k,id])=>{const e=document.getElementById(id);if(e){const target=e.closest('.glass-card')||e.parentElement;target.hidden=v[k]===false;target.classList.toggle('subsection-hidden',v[k]===false);}});}
+        function applySectionOrder(){const main=document.querySelector('main');const map={about:'about',metrics:'metrics',researchFocus:'research-focus',education:'education',skills:'skills',publications:'publications',awards:'awards',experience:'experience',gallery:'gallery',references:'references'};(appData.sectionOrder||[]).forEach(k=>{const e=document.getElementById(map[k]||k);if(e)main.appendChild(e);});}
+        const FONT_FALLBACKS={"Inter":"'Inter', sans-serif","Merriweather":"'Merriweather', serif","Roboto":"'Roboto', sans-serif","Open Sans":"'Open Sans', sans-serif","Lato":"'Lato', sans-serif","Montserrat":"'Montserrat', sans-serif","Poppins":"'Poppins', sans-serif","Nunito":"'Nunito', sans-serif","Raleway":"'Raleway', sans-serif","Source Sans 3":"'Source Sans 3', sans-serif","Oswald":"'Oswald', sans-serif","Ubuntu":"'Ubuntu', sans-serif","Noto Sans":"'Noto Sans', sans-serif","Noto Serif":"'Noto Serif', serif","Playfair Display":"'Playfair Display', serif","Libre Baskerville":"'Libre Baskerville', serif","Cormorant Garamond":"'Cormorant Garamond', serif","EB Garamond":"'EB Garamond', serif","Crimson Text":"'Crimson Text', serif","PT Serif":"'PT Serif', serif","Roboto Slab":"'Roboto Slab', serif","Arvo":"'Arvo', serif","Bitter":"'Bitter', serif","Fira Sans":"'Fira Sans', sans-serif","Work Sans":"'Work Sans', sans-serif","DM Sans":"'DM Sans', sans-serif","Manrope":"'Manrope', sans-serif","Space Grotesk":"'Space Grotesk', sans-serif","IBM Plex Sans":"'IBM Plex Sans', sans-serif","IBM Plex Serif":"'IBM Plex Serif', serif","Arial":"'Arial', sans-serif","Helvetica":"'Helvetica', sans-serif","Georgia":"'Georgia', serif","Times New Roman":"'Times New Roman', serif","Trebuchet MS":"'Trebuchet MS', sans-serif","Verdana":"'Verdana', sans-serif","Courier New":"'Courier New', monospace","Monospace":"'Monospace', monospace"};
+        function applyTypography(){const t=appData.typography||{};const sectionMap={about:'about',metrics:'metrics',researchFocus:'research-focus',education:'education',skills:'skills',publications:'publications',awards:'awards',experience:'experience',gallery:'gallery',references:'references'};Object.entries(sectionMap).forEach(([k,id])=>{const e=document.getElementById(id);if(e)e.style.fontFamily=FONT_FALLBACKS[t[k]||'Inter'];});const subMap={researchInterests:'research-interests-text',researchPhilosophy:'research-philosophy-text',currentResearch:'current-research-text',recentUpdates:'news-feed-viewport',publicationFilters:'pub-filter-buttons-container',publicationList:'publications-list',awardsList:'pub-awards-container',experienceList:'pub-exp-container',galleryAlbums:'gallery-album-filters',galleryList:'pub-gallery-container',referencesList:'pub-ref-container'};Object.entries(subMap).forEach(([k,id])=>{const e=document.getElementById(id);if(e)e.style.fontFamily=FONT_FALLBACKS[t[k]||'Inter'];});(appData.customSections||[]).forEach(c=>{const e=document.getElementById(c.id);if(e)e.style.fontFamily=FONT_FALLBACKS[t[c.id]||'Inter'];});}
+        function renderCustomSections(){const c=document.getElementById('custom-sections-container');if(!c)return;c.innerHTML=(appData.customSections||[]).map(s=>`<section id="${s.id}" class="py-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><h2 class="text-2xl sm:text-3xl font-bold font-serif text-slate-900 dark:text-white">${s.title||''}</h2><div class="mt-6 text-sm text-slate-700 dark:text-slate-300 leading-relaxed research-paragraph">${s.content||''}</div></div></section>`).join('');const main=document.querySelector('main');Array.from(c.children).forEach(e=>main.appendChild(e));}
         function renderAllPublicSections() {
             // Profile & Top Header
             const p = appData.profile;
             document.getElementById('nav-brand-name').innerText = p.name;
-            document.getElementById('nav-brand-title').innerText = p.headerTitle || `${p.title} | Virologist`;
+            document.getElementById('nav-brand-title').innerText = p.headerTitle || siteText('navTitle');
             document.getElementById('footer-name').innerText = `${p.name}, ${p.title}`;
             document.getElementById('footer-title').innerText = p.position;
 
@@ -423,7 +506,7 @@
             document.getElementById('pub-hero-institution').innerText = p.institution;
             document.getElementById('pub-hero-tagline').innerText = p.tagline;
             document.getElementById('pub-hero-bio').innerText = p.bio;
-            document.getElementById('pub-hero-badge').innerText = p.title;
+            document.getElementById('pub-hero-badge').innerText = p.title || siteText('heroBadge');
 
             document.getElementById('cv-download-btn').href = p.cvUrl || '#';
             document.getElementById('mobile-cv-btn').href = p.cvUrl || '#';
@@ -441,12 +524,108 @@
                 heroLinksContainer.innerHTML = '';
             }
 
+            // Header profile image (replaces the static AD mark without changing the header layout)
+            const navAvatar = document.getElementById('nav-brand-avatar');
+            const navAvatarImg = document.getElementById('nav-brand-avatar-img');
+            if (navAvatar && navAvatarImg) {
+                if (p.avatarUrl) {
+                    navAvatarImg.src = p.avatarUrl;
+                    navAvatarImg.alt = p.name || 'Profile image';
+                    navAvatarImg.classList.remove('hidden');
+                } else {
+                    navAvatarImg.removeAttribute('src');
+                    navAvatarImg.classList.add('hidden');
+                    navAvatar.innerHTML = '<span class="text-xl">&nbsp;</span>';
+                }
+            }
+
             // Avatar render
             const avatarContainer = document.getElementById('avatar-container');
             if (p.avatarUrl) {
-                avatarContainer.innerHTML = `<img src="${p.avatarUrl}" alt="${p.name}" class="w-full h-full object-cover">`;
+                avatarContainer.classList.toggle("avatar-circle",p.avatarShape==="circle"); avatarContainer.innerHTML = `<img src="${p.avatarUrl}" alt="${p.name}" class="w-full h-full object-cover">`;
             } else {
-                avatarContainer.innerHTML = `<span>AD</span>`;
+                avatarContainer.classList.toggle("avatar-circle",p.avatarShape==="circle");
+                avatarContainer.innerHTML = `<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='24' fill='%23102a43'/%3E%3Ccircle cx='100' cy='76' r='34' fill='white' opacity='.95'/%3E%3Cpath d='M42 174c8-38 30-56 58-56s50 18 58 56' fill='white' opacity='.95'/%3E%3C/svg%3E" alt="${p.name || 'Profile image'}" class="w-full h-full object-cover">`;
+            }
+
+            // Metrics Strip — values stay directly linked to the source sections.
+            const pubs = appData.publications || [];
+            const underReview = pubs.filter(x => x.category === 'under_review').length;
+            const firstAuthor = pubs.filter(x => x.isFirstAuthor).length;
+            const metricValues = {
+                'publications.total': pubs.length,
+                'publications.published': pubs.filter(x => x.category === 'published').length,
+                'publications.underReview': underReview,
+                'publications.firstAuthor': firstAuthor,
+                'publications.coAuthor': pubs.filter(x => !x.isFirstAuthor).length,
+                'education.total': (appData.education || []).length,
+                'experience.total': (appData.experience || []).length,
+                'awards.total': (appData.awards || []).length,
+                'gallery.total': (appData.gallery || []).length,
+                'gallery.albums': Math.max(0, (appData.galleryAlbums || []).filter(x => x !== 'All Photos').length),
+                'news.total': (appData.news || []).length,
+                'references.total': (appData.references || []).length,
+                'skills.total': ((appData.skills?.category1?.bullets || []).length + (appData.skills?.category2?.bullets || []).length),
+                'profile.focusTags': (p.focusTags || []).length,
+                'profile.socialLinks': (p.socialLinks || []).length,
+                'customSections.total': (appData.customSections || []).length,
+                'profile.yearsExperience': p.yearsExperience || '2+'
+            };
+            function resolveMetricValue(m){return m.source === 'manual' ? (m.value ?? '') : metricValues[m.source];}
+            const defaultMetrics = [
+                { id:'manuscripts', n:metricValues['publications.total'], l:siteText('manuscripts') },
+                { id:'underReview', n:metricValues['publications.underReview'], l:siteText('underReview') },
+                { id:'firstAuthor', n:metricValues['publications.firstAuthor'], l:siteText('firstAuthorMetric') },
+                { id:'yearsResearch', n:metricValues['profile.yearsExperience'], l:siteText('yearsResearch') }
+            ];
+            const configuredMetrics = (appData.metrics || defaultMetrics.map((m,i)=>({id:m.id,label:m.l,source:['publications.total','publications.underReview','publications.firstAuthor','profile.yearsExperience'][i],enabled:true})))
+                .filter(m=>m.enabled!==false)
+                .map(m=>({ ...m, n:resolveMetricValue(m), l:m.label || m.id }))
+                .filter(m=>m.n!==undefined);
+            document.getElementById('metrics-strip').innerHTML = configuredMetrics.map(m => `
+                <div class="glass-card rounded-2xl py-4 px-2 border border-slate-200 dark:border-slate-800">
+                    <div class="text-2xl sm:text-3xl font-bold font-serif text-blue-700 dark:text-blue-400">${m.n}</div>
+                    <div class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mt-1">${m.l}</div>
+                </div>
+            `).join('');
+
+            // Research Focus: interests, philosophy, current research, news
+            document.getElementById('research-interests-text').innerText = p.researchInterests || '';
+            document.getElementById('research-philosophy-text').innerText = p.researchPhilosophy || '';
+            document.getElementById('current-research-text').innerText = p.currentResearch || '';
+
+            const newsList = document.getElementById('news-feed-list');
+            if (newsList) {
+                const news = appData.news || [];
+                const renderNewsItems = items => items.map(n => `
+                    <div class="flex gap-3 items-start shrink-0 min-h-[2rem]">
+                        <span class="news-date font-bold text-amber-700 dark:text-amber-400">${n.date}</span>
+                        <span class="min-w-0 flex-1 text-slate-600 dark:text-slate-300 leading-relaxed">${n.text}</span>
+                    </div>
+                `).join('');
+                newsList.classList.remove('news-auto-scroll');
+                newsList.innerHTML = news.length > 4 ? renderNewsItems(news) + renderNewsItems(news) : renderNewsItems(news);
+                if (news.length > 4) requestAnimationFrame(() => newsList.classList.add('news-auto-scroll'));
+            }
+
+            // Awards / Fellowships Render
+            const awardsContainer = document.getElementById('pub-awards-container');
+            if (awardsContainer) {
+                awardsContainer.innerHTML = (appData.awards || []).map(a => `
+                    <div class="glass-card rounded-2xl p-6 sm:p-8 border-t-4 border-t-yellow-500 shadow-md flex gap-4">
+                        <div class="shrink-0 w-14 h-14 rounded-2xl bg-yellow-100 dark:bg-yellow-900/50 text-yellow-600 dark:text-yellow-400 flex items-center justify-center text-2xl">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <h3 class="text-lg font-bold text-slate-900 dark:text-white">${a.title}</h3>
+                                <span class="text-[10px] px-2 py-0.5 rounded-full bg-yellow-100 dark:bg-yellow-900/60 text-yellow-800 dark:text-yellow-300 font-bold">${a.period}</span>
+                            </div>
+                            <p class="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-0.5">${a.org}${a.meta ? ' &middot; ' + a.meta : ''}</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">${a.detail}</p>
+                        </div>
+                    </div>
+                `).join('');
             }
 
             // Education Render
@@ -558,9 +737,29 @@
                 </div>
             `).join('');
 
+            renderFocusTags();
             renderPublicPublicationCategories();
             renderPublicPublications();
             renderPublicGallery();
+            renderCustomSections();
+            applySiteText();
+            applySectionOrder();
+            applySectionVisibility();
+            applySubsectionVisibility();
+            applyTypography();
+        }
+
+        // Hide/show sections + matching nav links per sectionVisibility flags in data.json
+        function applySectionVisibility() {
+            const vis = appData.sectionVisibility || {};
+            ['about','metrics','researchFocus','education','skills','publications','awards','experience','gallery','references'].forEach(key => {
+                const selId = key === 'researchFocus' ? 'research-focus' : key;
+                const show = vis[key] !== false;
+                const el = document.getElementById(selId);
+                if (el) el.style.display = show ? '' : 'none';
+                document.querySelectorAll(`a[href="#${selId}"]`).forEach(a => a.style.display = show ? '' : 'none');
+            });
+            (appData.customSections||[]).forEach(s=>{const e=document.getElementById(s.id);if(e)e.style.display=vis[s.id]===false?'none':'';});
         }
 
         // Render Public Publication Categories (Filter Buttons)
@@ -574,12 +773,14 @@
             `).join('');
         }
 
+        let showAllPublications=false;
+        function toggleAllPublications(){showAllPublications=!showAllPublications;renderPublicPublications();}
         // Render Public Publications
         function renderPublicPublications() {
             const listContainer = document.getElementById('publications-list');
             const searchVal = (document.getElementById('pub-search')?.value || '').toLowerCase();
 
-            const filtered = appData.publications.filter(pub => {
+            const filtered = [...appData.publications].sort((a,b)=>(parseInt(b.year)||0)-(parseInt(a.year)||0)||(b.id||0)-(a.id||0)).filter(pub => {
                 const matchesFilter = activePubFilter === 'all' || 
                                      pub.category === activePubFilter ||
                                      (pub.tags || '').includes(activePubFilter);
@@ -595,14 +796,17 @@
                 listContainer.innerHTML = `
                     <div class="text-center py-12 glass-card rounded-2xl">
                         <i class="fas fa-search text-3xl text-slate-400 mb-2"></i>
-                        <p class="text-sm font-medium text-slate-600 dark:text-slate-400">No matching manuscripts found.</p>
+                        <p class="text-sm font-medium text-slate-600 dark:text-slate-400">${siteText('noMatching')}</p>
                     </div>
                 `;
                 return;
             }
 
-            listContainer.innerHTML = filtered.map(pub => `
-                <div class="glass-card rounded-2xl p-6 hover:shadow-lg transition-all duration-200 border border-slate-200 dark:border-slate-800">
+            const visible=showAllPublications?filtered:filtered.slice(0,3);
+            listContainer.innerHTML = visible.map(pub => `
+                <div class="glass-card rounded-2xl p-6 hover:shadow-lg transition-all duration-200 border border-slate-200 dark:border-slate-800 border-l-4 ${
+                    pub.category === 'under_review' ? 'border-l-amber-500' : 'border-l-emerald-500'
+                } ${pub.isFirstAuthor ? 'ring-1 ring-blue-500/30' : ''}">
                     <div class="flex flex-wrap items-center justify-between gap-2">
                         <div class="flex items-center space-x-2">
                             <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider ${
@@ -610,12 +814,12 @@
                                 ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300' 
                                 : 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'
                             }">
-                                ${pub.category === 'under_review' ? 'Under Review' : (pub.category || 'Published')}
+                                ${pub.category === 'under_review' ? siteText('underReview') : (pub.category || siteText('published'))}
                             </span>
 
                             ${pub.isFirstAuthor ? `
                                 <span class="px-2.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300">
-                                    First Author
+                                    ${siteText('firstAuthor')}
                                 </span>
                             ` : ''}
 
@@ -624,7 +828,7 @@
                         
                         ${pub.doi ? `
                             <a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener" class="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center space-x-1">
-                                <span>DOI: ${pub.doi}</span>
+                                <span>${siteText('doi')}: ${pub.doi}</span>
                                 <i class="fas fa-external-link-alt text-[10px]"></i>
                             </a>
                         ` : ''}
@@ -642,7 +846,7 @@
                         ${pub.journal}
                     </p>
                 </div>
-            `).join('');
+            `).join('')+(filtered.length>3?`<div class="text-center pt-4"><button onclick="toggleAllPublications()" class="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-xs font-bold text-blue-700 dark:text-blue-400">${showAllPublications?siteText('showFewer'):siteText('viewAll')}</button></div>`:'');
         }
 
         function setPubFilter(filter, btn) {
@@ -666,7 +870,7 @@
             const filtered = appData.gallery.filter(g => activeGalleryAlbum === 'All Photos' || (g.album || 'General') === activeGalleryAlbum);
 
             if (filtered.length === 0) {
-                galleryContainer.innerHTML = `<p class="col-span-full text-xs text-slate-500 italic">No gallery photos in this album.</p>`;
+                galleryContainer.innerHTML = `<p class="col-span-full text-xs text-slate-500 italic">${siteText('noGalleryPhotos', 'No gallery photos in this album.')}</p>`;
                 return;
             }
 
@@ -676,13 +880,13 @@
                         <img src="${item.imgUrl}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white font-medium text-xs space-x-2">
                             <i class="fas fa-search-plus"></i>
-                            <span>Expand View</span>
+                            <span>${siteText('expandView')}</span>
                         </div>
                     </div>
                     <div class="p-5">
                         <div class="flex justify-between items-center">
-                            <span class="text-[10px] uppercase font-bold tracking-wider text-blue-600 dark:text-blue-400">${item.category || 'Photo'}</span>
-                            <span class="text-[10px] bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-slate-500 font-semibold">${item.album || 'General'}</span>
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-blue-600 dark:text-blue-400">${item.category || siteText('photo')}</span>
+                            <span class="text-[10px] bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-slate-500 font-semibold">${item.album || siteText('general')}</span>
                         </div>
                         <h4 class="text-base font-bold text-slate-900 dark:text-white mt-1">${item.title}</h4>
                         <p class="text-xs text-slate-600 dark:text-slate-400 mt-1 line-clamp-2">${item.caption}</p>
@@ -719,6 +923,20 @@
         }
 
         // INITIAL LOAD — fetch content from data.json (edited via the separate admin tool)
+        function normalizePublicData(json) {
+            const d=(json&&typeof json==='object'&&!Array.isArray(json))?json:{};
+            d.profile=(d.profile&&typeof d.profile==='object')?d.profile:{};
+            d.profile.socialLinks=Array.isArray(d.profile.socialLinks)?d.profile.socialLinks:[];
+            d.profile.focusTags=Array.isArray(d.profile.focusTags)?d.profile.focusTags:[];
+            d.publications=Array.isArray(d.publications)?d.publications:[];
+            d.pubCategories=Array.isArray(d.pubCategories)?d.pubCategories:[{id:'all',label:'All Manuscripts'}];
+            d.galleryAlbums=Array.isArray(d.galleryAlbums)?d.galleryAlbums:['All Photos'];
+            d.education=Array.isArray(d.education)?d.education:[]; d.skills=(d.skills&&typeof d.skills==='object')?d.skills:{category1:{title:'',subtitle:'',bullets:[]},category2:{title:'',subtitle:'',bullets:[]}};
+            d.experience=Array.isArray(d.experience)?d.experience:[]; d.awards=Array.isArray(d.awards)?d.awards:[]; d.news=Array.isArray(d.news)?d.news:[]; d.gallery=Array.isArray(d.gallery)?d.gallery:[]; d.references=Array.isArray(d.references)?d.references:[];
+            d.sectionVisibility=(d.sectionVisibility&&typeof d.sectionVisibility==='object')?d.sectionVisibility:{}; d.sectionOrder=Array.isArray(d.sectionOrder)?d.sectionOrder:[]; d.customSections=Array.isArray(d.customSections)?d.customSections:[]; d.siteText=(d.siteText&&typeof d.siteText==='object')?d.siteText:{}; d.metrics=Array.isArray(d.metrics)?d.metrics:[]; d.typography=(d.typography&&typeof d.typography==='object')?d.typography:{};
+            return d;
+        }
+
         window.onload = function() {
             fetch('data.json?t=' + Date.now())
                 .then(res => {
@@ -726,7 +944,7 @@
                     return res.json();
                 })
                 .then(json => {
-                    appData = json;
+                    appData = normalizePublicData(json);
                     renderAllPublicSections();
                 })
                 .catch(err => {

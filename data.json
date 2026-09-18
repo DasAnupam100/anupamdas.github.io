@@ -1,56 +1,129 @@
 {
   "profile": {
     "name": "Anupam Das",
-    "headerTitle": "DVM, MS, Virologist",
-    "title": "DVM, MS",
-    "position": "Research Assistant in Molecular Virology & Viral Genomics",
+    "headerTitle": "Doctor of Veterinary Medicine",
+    "title": "",
+    "position": "Research Assistant at Viral genomic and Infection Dynamics Laboratory",
     "institution": "Department of Microbiology and Hygiene, Bangladesh Agricultural University (BAU)",
-    "tagline": "Prospective PhD Student (Fall 2026 / Spring 2027)",
+    "tagline": "",
     "cvUrl": "Anupam_Das_CV.pdf",
     "avatarUrl": "",
-    "bio": "Veterinary Virologist with comprehensive training in molecular diagnostic virology, viral isolation, and computational genomics. My research spans field outbreak surveillance, full-genome NGS assembly, phylogenetics, selection pressure, and recombination dynamics in high-impact avian and zoonotic viruses. Committed to pursuing advanced PhD research in virus evolution, host-pathogen interactions, and emerging infectious disease prevention.",
+    "yearsExperience": "2+",
+    "bio": "My research interests lie at the intersection of molecular virology, viral genomics, and pathogen evolution, with a focus on understanding viral diversity and host–virus interactions. I seek to develop this foundation through doctoral research on the molecular biology and evolution of viral pathogens.",
+    "researchInterests": "My PhD research interests center on the molecular evolution and phylodynamics of avian and zoonotic RNA/DNA viruses — particularly reassortment, recombination, and selection pressure driving emergence in poultry-dense, high-spillover-risk regions like South Asia. I am seeking a PhD lab with strengths in viral genomics, computational evolutionary biology, and One Health surveillance, where field-derived data can be paired with rigorous bioinformatic modeling.",
+    "researchPhilosophy": "I approach a problem by first going to the source — the outbreak, the sample, the raw sequencing read — before trusting any downstream model. Field diagnostics taught me that clean data beats clever statistics, and computational virology taught me that a phylogeny is only as honest as the quality control behind it. I try to hold both instincts at once: hands willing to do the bench work, and a mind that stays skeptical of its own pipeline.",
+    "currentResearch": "Fowl adenovirus",
     "socialLinks": [
-      { "id": 1, "name": "Email", "url": "mailto:anupam.das.vet@gmail.com" },
-      { "id": 2, "name": "Google Scholar", "url": "https://scholar.google.com" },
-      { "id": 3, "name": "ORCID", "url": "https://orcid.org" },
-      { "id": 4, "name": "LinkedIn", "url": "https://linkedin.com" },
-      { "id": 5, "name": "Scopus", "url": "https://scopus.com" },
-      { "id": 6, "name": "Web of Science", "url": "https://webofscience.com" }
-    ]
+      {
+        "id": 1,
+        "name": "Email",
+        "url": "mailto:anupam.1801100@bau.edu.bd"
+      },
+      {
+        "id": 2,
+        "name": "Google Scholar",
+        "url": "https://scholar.google.com/citations?user=BAgU2WsAAAAJ&hl=en"
+      },
+      {
+        "id": 3,
+        "name": "ORCID",
+        "url": "https://orcid.org/0009-0008-4507-9089"
+      },
+      {
+        "id": 4,
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/in/anupam-das100"
+      },
+      {
+        "id": 5,
+        "name": "Scopus",
+        "url": "https://www.scopus.com/authid/detail.uri?authorId=60235651000"
+      },
+      {
+        "id": 6,
+        "name": "Web of Science",
+        "url": "https://webofscience.com/wos/author/record/PEX-8405-2025"
+      },
+      {
+        "id": 1789654736986,
+        "name": "Researchgate",
+        "url": "https://www.researchgate.net/profile/Anupam-Das-49"
+      }
+    ],
+    "focusTags": [
+      {
+        "id": 1,
+        "icon": "fas fa-virus",
+        "color": "blue",
+        "text": "Molecular Virology"
+      },
+      {
+        "id": 2,
+        "icon": "fas fa-dna",
+        "color": "teal",
+        "text": "NGS Viral Genomics"
+      },
+      {
+        "id": 3,
+        "icon": "fas fa-diagram-project",
+        "color": "purple",
+        "text": "Viral Evolution & Recombination"
+      },
+      {
+        "id": 4,
+        "icon": "fas fa-shield-virus",
+        "color": "amber",
+        "text": "Host-Pathogen Interactions"
+      }
+    ],
+    "avatarShape": "square"
   },
   "pubCategories": [
-    { "id": "all", "label": "All Manuscripts" },
-    { "id": "under_review", "label": "Under Review" },
-    { "id": "published", "label": "Published" },
-    { "id": "avian", "label": "Avian Viruses" }
+    {
+      "id": "all",
+      "label": "All Manuscripts"
+    },
+    {
+      "id": "under_review",
+      "label": "Under Review"
+    },
+    {
+      "id": "published",
+      "label": "Published"
+    }
   ],
-  "galleryAlbums": ["All Photos", "Lab Work", "Fellowships", "Conferences"],
+  "galleryAlbums": [
+    "All Photos",
+    "Lab Work",
+    "Fellowships",
+    "Conferences"
+  ],
   "education": [
     {
       "id": 1,
-      "degree": "Master of Science (M.S.) in Microbiology",
+      "degree": "MS in Microbiology",
       "institution": "Bangladesh Agricultural University (BAU), Mymensingh",
       "period": "2025 – 2026",
       "cgpa": "3.83 / 4.00 (Up to 2nd Sem)",
-      "description": "Thesis: Molecular detection and complete genomic characterization of fowl adenovirus (FAdV) strains circulating in poultry in Bangladesh. Advisor: Prof. Dr. Md. Golzar Hossain."
+      "description": "Thesis: Molecular detection and complete genomic characterization of fowl adenovirus (FAdV) strains circulating in poultry in Bangladesh."
     },
     {
       "id": 2,
       "degree": "Doctor of Veterinary Medicine (DVM)",
       "institution": "Bangladesh Agricultural University (BAU), Mymensingh",
-      "period": "2018 – 2025",
+      "period": "2019 – 2023",
       "cgpa": "3.312 / 4.00",
       "description": "Registered Veterinarian (BVC Reg No: 9682). 5-year professional veterinary program covering infectious disease pathology, epidemiology, clinical diagnostics, and diagnostic internship."
     }
   ],
   "skills": {
     "category1": {
-      "title": "In Vitro & Wet-Lab Virology",
+      "title": "In Vitro & Wet-Lab ",
       "subtitle": "Diagnostic Benchwork & Viral Culture",
       "bullets": [
         "Viral Isolation & Culture: Embryonated Chicken Egg (ECE) inoculation (amniotic, allantoic, CAM routes), primary cell culture maintenance, cytopathic effect (CPE) monitoring.",
         "Serology & Titration: Hemagglutination (HA) and HA Inhibition (HI) assays, viral infectivity titration (EID50, ELD50 calculations), indirect and sandwich ELISA assays.",
-        "Molecular Assays: Viral DNA/RNA extraction (spin-column and magnetic bead), PCR, RT-qPCR, gradient PCR, agarose gel electrophoresis, gel documentation.",
+        "Molecular Assays: Viral DNA/RNA extraction,  PCR, Reverse transcriptas-PCR, Real time PCR,  agarose gel electrophoresis, gel documentation.",
         "Biosafety & Sample Processing: BSL-2 laboratory procedures, field sample processing from poultry/livestock tissue, aseptic technique, cold-chain maintenance."
       ]
     },
@@ -60,77 +133,33 @@
       "bullets": [
         "NGS Genome Assembly & Annotation: Full-length viral genome assembly (SPAdes, MEGAHIT), quality filtering (FastQC, Trimmomatic), gene prediction, genome annotation (Prokka, NCBI).",
         "Phylogenetics & Evolutionary Dynamics: Maximum Likelihood and Bayesian phylogenetic tree construction (IQ-TREE, MEGA, BEAST), tree visualization (FigTree, iTOL).",
-        "Recombination & Selection Pressure: Recombination detection suite (RDP4/RDP5), site-specific selection pressure analysis (HYPHY, dN/dS calculations, MEME, FEL, FUBAR).",
-        "Vaccinology & Computational Tools: Subtractive genomics, immunoinformatics vaccine design, Linux shell scripting, Python & R data visualization."
+        "Recombination & Selection Pressure: Recombination detection suite (RDP4/RDP5), site-specific selection pressure analysis (PAML).",
+        "Vaccinology & Computational Tools: Subtractive genomics, Linux shell scripting, Python & R data visualization."
       ]
     }
   },
   "publications": [
     {
-      "id": 1,
-      "title": "Evolutionary Genomics of Fowl Adenovirus-E Serotype 8b Isolated from Commercial Broiler Outbreaks in Bangladesh",
-      "authors": "Anupam Das, M. S. Islam, S. Akter, M. G. Hossain",
-      "journal": "Virology (Manuscript Under Review)",
-      "year": "2026",
-      "category": "under_review",
-      "tags": "avian, under_review",
-      "isFirstAuthor": true,
-      "doi": ""
-    },
-    {
-      "id": 2,
-      "title": "Reassortant Highly Pathogenicity H5N1 Genotype G1.1 Isolated from Poultry Outbreaks in Bangladesh: Molecular Characterization and Phylodynamics",
-      "authors": "Anupam Das, R. Parvin, M. G. Hossain",
-      "journal": "Poultry Science (Manuscript Under Review)",
-      "year": "2026",
-      "category": "under_review",
-      "tags": "avian, under_review",
-      "isFirstAuthor": true,
-      "doi": ""
-    },
-    {
-      "id": 3,
-      "title": "Genomic Diversity and Evolutionary Dynamics of Circulating Human Papillomavirus Genotypes: A Comparative Structural Analysis",
-      "authors": "Anupam Das, T. A. Khan, S. Akter",
-      "journal": "Journal of Infection and Public Health (Manuscript Under Review)",
-      "year": "2026",
-      "category": "under_review",
-      "tags": "under_review",
-      "isFirstAuthor": true,
-      "doi": ""
-    },
-    {
-      "id": 4,
-      "title": "Complete Genome Sequencing of Occult Hepatitis B Virus in Hemodialysis Patients in Bangladesh",
-      "authors": "M. S. Rahman, Anupam Das, S. Akter, M. G. Hossain",
-      "journal": "International Journal of Microbiology",
-      "year": "2026",
-      "category": "published",
-      "tags": "published",
-      "isFirstAuthor": false,
-      "doi": "10.1155/2026/ijm.991204"
-    },
-    {
-      "id": 5,
-      "title": "Complete genome sequencing of the fowlpox virus vaccine strain isolated in Bangladesh",
-      "authors": "Anupam Das, S. Akter, M. G. Hossain",
+      "id": 1789662916695,
+      "title": "Complete genome sequence of a highly pathogenic H5N1 avian influenza virus from recent poultry outbreak in Bangladesh.",
+      "authors": "Farazi R, Tusar MTT, Roy CR, Mia R, Mozumder A, Das A, Tasmin J, Hasan SMN, Alam MS, Akter S, Saha S, Islam T, Hossain MG. 2025.Anupam Das, et al.",
       "journal": "Microbiology Resource Announcements",
-      "year": "2026",
+      "year": "2025",
       "category": "published",
-      "tags": "avian, published",
-      "isFirstAuthor": true,
-      "doi": "10.1128/mra.00210-26"
+      "tags": "under_review",
+      "isFirstAuthor": false,
+      "doi": "https://doi.org/10.1128/mra.00825-25"
     },
     {
-      "id": 6,
-      "title": "First complete genome of a fowlpox virus isolated in Bangladesh: Structural and evolutionary insights",
-      "authors": "Anupam Das, S. Akter, M. G. Hossain",
-      "journal": "Microbiology Spectrum",
-      "year": "2026",
+      "id": 1789663113762,
+      "title": "Genome sequence of fowlpox virus from a field outbreak in Bangladesh",
+      "authors": "Mozumder A, Akter S, Mia R, Hasan SMN, Das A, Tasmin J, Mondal ABMHR, Rahman MS, Bhuiyan MIU, Akter S, Saha S, Hossain MG.",
+      "journal": "Microbiology Resource Announcements",
+      "year": "2025",
       "category": "published",
-      "tags": "avian, published",
-      "isFirstAuthor": true,
-      "doi": "10.1128/spectrum.01045-26"
+      "tags": "under_review",
+      "isFirstAuthor": false,
+      "doi": "https://doi.org/10.1128/mra.00881-25"
     }
   ],
   "experience": [
@@ -144,17 +173,6 @@
         "Leading molecular diagnostic surveillance and NGS characterization of Fowl Adenovirus (FAdV) and Avian Influenza Virus (AIV) outbreaks.",
         "Executing full genome assembly pipelines (SPAdes, MEGAHIT), selection pressure estimation (HyPhy), and recombination mapping (RDP5).",
         "Co-supervising undergraduate veterinary students in molecular diagnostic assays (RT-qPCR, gel electrophoresis)."
-      ]
-    },
-    {
-      "id": 2,
-      "role": "SAKURA Science Exchange Program Fellow",
-      "institution": "Japan Science and Technology Agency (JST), Japan (SSC ID: 24101499)",
-      "period": "March 2026",
-      "badge": "International Fellowship",
-      "bullets": [
-        "Awarded prestigious international research fellowship under JST (Japan).",
-        "Participated in advanced biotechnology training, high-throughput sequencing technologies, and cross-border research collaborations in viral disease containment."
       ]
     },
     {
@@ -176,6 +194,53 @@
       "bullets": [
         "Rotated through outbreak response teams, epidemiological data gathering, and diagnostic necropsy for livestock viral outbreaks."
       ]
+    },
+    {
+      "id": 1789654841500,
+      "role": "Research Position",
+      "institution": "Institution Name",
+      "period": "2026",
+      "badge": "New Role",
+      "bullets": [
+        "Research duties description..."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "id": 1,
+      "title": "SAKURA Science Exchange Program Fellowship",
+      "org": "Japan Science and Technology Agency (JST), Japan",
+      "period": "March 2026",
+      "meta": "SSC ID: 24101499",
+      "detail": "Competitively awarded international fellowship for advanced biotechnology training, high-throughput sequencing technologies, and cross-border research collaboration in viral disease containment."
+    }
+  ],
+  "news": [
+    {
+      "id": 1789656288871,
+      "date": "2026",
+      "text": "New update..."
+    },
+    {
+      "id": 1,
+      "date": "Sept 2026",
+      "text": "Manuscript on FAdV-E genotype 8b genomics submitted to Virology, currently under peer review."
+    },
+    {
+      "id": 2,
+      "date": "March 2026",
+      "text": "Awarded the SAKURA Science Exchange Program Fellowship by JST, Japan."
+    },
+    {
+      "id": 3,
+      "date": "May 2026",
+      "text": "Fowlpox virus genome papers published in Microbiology Resource Announcements and Microbiology Spectrum."
+    },
+    {
+      "id": 4,
+      "date": "2026",
+      "text": "Began full-genome phylodynamic analysis of H5N1 (G1.1) outbreak strains in Bangladeshi poultry."
     }
   ],
   "gallery": [
@@ -202,6 +267,14 @@
       "category": "Conference Presentation",
       "imgUrl": "https://placehold.co/600x400/b7791f/ffffff?text=BSVER+ASCon+XXXII+Presentation",
       "caption": "Delivering research talk on Fowl Adenovirus strain surveillance in Bangladesh."
+    },
+    {
+      "id": 1789656344464,
+      "album": "Lab Work",
+      "title": "New Photo Title",
+      "category": "Field Research",
+      "imgUrl": "https://placehold.co/600x400/102a43/ffffff?text=New+Gallery+Image",
+      "caption": "Photo description..."
     }
   ],
   "references": [
@@ -221,5 +294,144 @@
       "email": "sharmin.akter@bau.edu.bd",
       "badge": "Academic Ref"
     }
-  ]
+  ],
+  "sectionVisibility": {
+    "about": true,
+    "metrics": true,
+    "researchFocus": true,
+    "education": true,
+    "skills": true,
+    "publications": true,
+    "awards": true,
+    "experience": true,
+    "gallery": true,
+    "references": true,
+    "researchInterests": true,
+    "researchPhilosophy": true,
+    "currentResearch": true,
+    "recentUpdates": true,
+    "publicationFilters": true,
+    "publicationList": true,
+    "awardsList": true,
+    "experienceList": true,
+    "galleryAlbums": true,
+    "galleryList": true,
+    "referencesList": true
+  },
+  "sectionOrder": [
+    "about",
+    "metrics",
+    "researchFocus",
+    "education",
+    "skills",
+    "publications",
+    "awards",
+    "experience",
+    "gallery",
+    "references"
+  ],
+  "customSections": [],
+  "siteText": {
+    "title": "Anupam Das, DVM, MS | Academic Portfolio",
+    "navTitle": "DVM, MS, Virologist",
+    "navAbout": "About",
+    "navEducation": "Education",
+    "navSkills": "Skills",
+    "navPublications": "Publications",
+    "navAwards": "Awards",
+    "navExperience": "Experience",
+    "navGallery": "Gallery",
+    "navReferences": "References",
+    "cv": "CV (PDF)",
+    "downloadCv": "Download CV (PDF)",
+    "heroBadge": "DVM, MS",
+    "researchDirection": "Direction & Approach",
+    "researchFocus": "Research Focus",
+    "researchInterests": "Research Interests",
+    "researchPhilosophy": "How I Approach a Problem",
+    "currentWorking": "Currently Working On",
+    "recentUpdates": "Recent Updates",
+    "academicBackground": "Academic Background",
+    "academicCredentials": "Academic Credentials",
+    "coreExpertise": "Core Expertise",
+    "technicalCapabilities": "Technical Capabilities",
+    "scholarlyOutput": "Scholarly Output",
+    "publications": "Publications & Manuscripts",
+    "searchPublications": "Search title, journal, or pathogen...",
+    "recognition": "Recognition",
+    "awards": "Grants, Awards & Fellowships",
+    "careerTrajectory": "Career Trajectory",
+    "experience": "Research Experience & Appointments",
+    "academicGallery": "Academic Gallery",
+    "gallery": "Fieldwork & Media Gallery",
+    "recommenders": "Recommenders",
+    "references": "Academic References",
+    "expandView": "Expand View",
+    "noMatching": "No matching manuscripts found.",
+    "doi": "DOI",
+    "firstAuthor": "First Author",
+    "published": "Published",
+    "underReview": "Under Review",
+    "manuscripts": "Manuscripts",
+    "firstAuthorMetric": "First-Author",
+    "yearsResearch": "Yrs Research Exp.",
+    "reference": "Reference",
+    "photo": "Photo",
+    "general": "General",
+    "allPhotos": "All Photos",
+    "rights": "All rights reserved.",
+    "viewAll": "View all manuscripts",
+    "showFewer": "Show fewer manuscripts",
+    "footerTitle": "Prospective PhD Student | Molecular Virology & Viral Genomics",
+    "noGalleryPhotos": "No gallery photos in this album."
+  },
+  "metrics": [
+    {
+      "id": "manuscripts",
+      "label": "Manuscripts",
+      "source": "publications.total",
+      "enabled": true
+    },
+    {
+      "id": "underReview",
+      "label": "Under Review",
+      "source": "publications.underReview",
+      "enabled": true
+    },
+    {
+      "id": "firstAuthor",
+      "label": "First-Author",
+      "source": "publications.firstAuthor",
+      "enabled": true
+    },
+    {
+      "id": "yearsResearch",
+      "label": "Yrs Research Exp.",
+      "source": "profile.yearsExperience",
+      "enabled": true
+    }
+  ],
+  "typography": {
+    "about": "Inter",
+    "metrics": "Inter",
+    "researchFocus": "Inter",
+    "education": "Inter",
+    "skills": "Inter",
+    "publications": "Inter",
+    "awards": "Inter",
+    "experience": "Inter",
+    "gallery": "Inter",
+    "references": "Inter",
+    "researchInterests": "Inter",
+    "researchPhilosophy": "Inter",
+    "currentResearch": "Inter",
+    "recentUpdates": "Inter",
+    "publicationFilters": "Inter",
+    "publicationList": "Inter",
+    "awardsList": "Inter",
+    "experienceList": "Inter",
+    "galleryAlbums": "Inter",
+    "galleryList": "Inter",
+    "referencesList": "Inter"
+  }
 }
