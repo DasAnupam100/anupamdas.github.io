@@ -76,7 +76,11 @@
         "text": "Host-Pathogen Interactions"
       }
     ],
-    "avatarShape": "square"
+    "avatarShape": "square",
+    "institutionLink": {
+      "url": "",
+      "style": "hyperlink"
+    }
   },
   "pubCategories": [
     {
@@ -105,7 +109,11 @@
       "institution": "Bangladesh Agricultural University (BAU), Mymensingh",
       "period": "2025 – 2026",
       "cgpa": "3.83 / 4.00 (Up to 2nd Sem)",
-      "description": "Thesis: Molecular detection and complete genomic characterization of fowl adenovirus (FAdV) strains circulating in poultry in Bangladesh."
+      "description": "Thesis: Molecular detection and complete genomic characterization of fowl adenovirus (FAdV) strains circulating in poultry in Bangladesh.",
+      "institutionLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     },
     {
       "id": 2,
@@ -113,7 +121,11 @@
       "institution": "Bangladesh Agricultural University (BAU), Mymensingh",
       "period": "2019 – 2023",
       "cgpa": "3.312 / 4.00",
-      "description": "Registered Veterinarian (BVC Reg No: 9682). 5-year professional veterinary program covering infectious disease pathology, epidemiology, clinical diagnostics, and diagnostic internship."
+      "description": "Registered Veterinarian (BVC Reg No: 9682). 5-year professional veterinary program covering infectious disease pathology, epidemiology, clinical diagnostics, and diagnostic internship.",
+      "institutionLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     }
   ],
   "skills": {
@@ -173,7 +185,11 @@
         "Leading molecular diagnostic surveillance and NGS characterization of Fowl Adenovirus (FAdV) and Avian Influenza Virus (AIV) outbreaks.",
         "Executing full genome assembly pipelines (SPAdes, MEGAHIT), selection pressure estimation (HyPhy), and recombination mapping (RDP5).",
         "Co-supervising undergraduate veterinary students in molecular diagnostic assays (RT-qPCR, gel electrophoresis)."
-      ]
+      ],
+      "institutionLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     },
     {
       "id": 3,
@@ -183,7 +199,11 @@
       "badge": "Institutional Role",
       "bullets": [
         "Assisting in livestock viral vaccine quality control, seed virus maintenance, and field diagnostic ELISA testing for viral diseases."
-      ]
+      ],
+      "institutionLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     },
     {
       "id": 4,
@@ -193,7 +213,11 @@
       "badge": "Internship",
       "bullets": [
         "Rotated through outbreak response teams, epidemiological data gathering, and diagnostic necropsy for livestock viral outbreaks."
-      ]
+      ],
+      "institutionLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     },
     {
       "id": 1789654841500,
@@ -203,7 +227,11 @@
       "badge": "New Role",
       "bullets": [
         "Research duties description..."
-      ]
+      ],
+      "institutionLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     }
   ],
   "awards": [
@@ -213,7 +241,11 @@
       "org": "Japan Science and Technology Agency (JST), Japan",
       "period": "March 2026",
       "meta": "SSC ID: 24101499",
-      "detail": "Competitively awarded international fellowship for advanced biotechnology training, high-throughput sequencing technologies, and cross-border research collaboration in viral disease containment."
+      "detail": "Competitively awarded international fellowship for advanced biotechnology training, high-throughput sequencing technologies, and cross-border research collaboration in viral disease containment.",
+      "orgLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     }
   ],
   "news": [
@@ -284,7 +316,11 @@
       "title": "Professor & MS Thesis Advisor",
       "dept": "Department of Microbiology and Hygiene\nFaculty of Veterinary Science\nBangladesh Agricultural University (BAU), Mymensingh-2202",
       "email": "mhossain@bau.edu.bd",
-      "badge": "Primary Advisor"
+      "badge": "Primary Advisor",
+      "deptLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     },
     {
       "id": 2,
@@ -292,7 +328,11 @@
       "title": "Professor",
       "dept": "Department of Microbiology and Hygiene\nFaculty of Veterinary Science\nBangladesh Agricultural University (BAU), Mymensingh-2202",
       "email": "sharmin.akter@bau.edu.bd",
-      "badge": "Academic Ref"
+      "badge": "Academic Ref",
+      "deptLink": {
+        "url": "",
+        "style": "hyperlink"
+      }
     }
   ],
   "sectionVisibility": {
